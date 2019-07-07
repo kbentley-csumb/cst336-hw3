@@ -1,0 +1,20 @@
+
+main {
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 40rem;    /* Footer height */
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: black;
+    bottom: 0;
+    height: 40rem;
+}
+
+#container {
+    position: relative;
+    min-height: 100vh;
+}
