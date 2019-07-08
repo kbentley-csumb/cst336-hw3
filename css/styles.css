@@ -3,7 +3,7 @@ main {
     margin: 0 auto;
     text-align: center;
     justify-content: center;
-    padding-bottom: 40rem;    /* Footer height */
+    padding-bottom: 0rem;    /* Footer height */
 }
 
 footer {
@@ -11,10 +11,16 @@ footer {
     font-size: 0.8em;
     color: black;
     bottom: 0;
-    height: 40rem;
+    height: 30rem;
 }
 
 #container {
     position: relative;
     min-height: 100vh;
 }
+
+h3 {
+    color: blue !important;
+    font-size: 0.5em;
+}
+

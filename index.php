@@ -13,8 +13,48 @@
     <div id="container">
     <main>
     <h1>Heading</h1>
-This is the main content.
+<p>Dealer</p><br/>
+    <form id="signupForm" method="post" action="#">
 
+        <div class="row">
+            <div class='col-sm-3'>
+            </div>
+            <div class='col-sm-3'>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary" value="Deal New Deck" onclick="getDeckId(this,event)">
+                </div>
+            </div>
+            <div class='col-sm-3'>
+                <div class="form-group">
+                    <input id="shuffleBtn" type="submit" class="btn btn-primary" value="Shuffle" disabled onclick="shuffle(this,event)">
+                </div>
+            </div>
+            <div class='col-sm-3'>
+            </div>
+        </div>
+        <div class="row">
+            <div class='col-sm-2'>
+            </div>
+            <div class='col-sm-8'>
+                <div class="form-group">
+                    <label for="nPull">How many cards do you want to draw? <span id="remainingCount">0 cards are available.</span></label>
+                    <input class="form-control" type="text" name="nPull" id="nPull" placeholder="1">
+                    <small id="pullError"></small>
+                </div>
+            </div>
+            <div class='col-sm-2'>
+            </div>
+        </div>
+        <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <input id="drawBtn" type="submit" class="btn btn-primary" value="Draw" disabled onclick="drawCard(this,event)">
+            </div>
+        </div>
+        </div>
+    </form>
+
+    <div id="cards"> </div>
     </main>
 
     <footer>
