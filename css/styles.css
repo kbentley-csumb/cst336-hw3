@@ -20,7 +20,79 @@ footer {
 }
 
 h3 {
-    color: blue !important;
+    color: black !important;
     font-size: 0.5em;
 }
 
+#pullError {
+    padding: 0;
+    margin-top: 15px;
+}
+
+body {
+    background-color: #477148 !important;
+}
+
+#dealBtn {
+    background-color: #FCE258;
+    border-color: #FCE258;
+    color: black;
+}
+
+#shuffleBtn {
+    background-color: #FCE258;
+    border-color: #FCE258;
+    color: black;
+}
+
+#drawBtn {
+    background-color: #00FF4C;
+    border-color: #00FF4C;
+    color: black;
+}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.cards {
+    position: relative;
+    width: 50%;
+  }
+  
+  /* Make the image to responsive */
+  .cardImage {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* The overlay effect (full height and width) - lays on top of the container and over the image */
+  .cardOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FCE258;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+  }
+  
+  /* When you mouse over the container, the overlay text will "zoom" in display */
+  .cardContainer:hover .cardOverlay {
+    transform: scale(1);
+  }
+  
+  /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+  .cardName {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+a {
+    color: black !important;
+}

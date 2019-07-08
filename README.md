@@ -17,3 +17,7 @@ Row for each 3 cards
 Hover for the high and low cards?
 
 - Footer
+
+
+Shuffle Icon
+Draw Icon
