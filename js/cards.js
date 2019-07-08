@@ -62,13 +62,19 @@ function drawCard(btn,event) {
     cardNames = []
     event.preventDefault();
     var numToPull = $("#nPull").val();
+    if(numToPull < 1) {
+        $("#pullError").html("You have to pull at least 1 card.");
+        $("#pullError").attr("class","alert alert-danger");
+        return;
+    }
+
     if(numToPull > cardsLeft) {
-        $("#pullError").html("There are only " + cardsLeft + " cards left in the deck. Please choose fewer.")
-        $("#pullError").attr("class","alert alert-danger")
+        $("#pullError").html("There are only " + cardsLeft + " cards left in the deck. Please choose fewer.");
+        $("#pullError").attr("class","alert alert-danger");
         return;
     }
     $("#pullError").html("");
-    $("#pullError").attr("class","bg-primary text-white")
+    $("#pullError").attr("class","bg-primary text-white");
     $("#cards").html("");
     $.ajax({
         method: "GET",
@@ -93,7 +99,7 @@ function drawCard(btn,event) {
                 
                 //card image
                 cardsString += "<div class='cardContainer col-sm-2'>" 
-                cardsString += "<img class='cardImage' src='" + result.cards[i].image + "' alt='" + cardName + "'>";            
+                cardsString += "<img class='cardImage' src='" + result.cards[i].image + "' alt='" + cardName + "'>";
                 cardsString += "<div class='cardOverlay'>";
                 cardsString += "<div class='cardName'>";
                 cardsString += cardName;
@@ -112,7 +118,7 @@ function drawCard(btn,event) {
             cardsLeft = result.remaining;
             $("#cards").html(cardsString);
             $("#remainingCount").html(cardsLeft + " cards are available.");
-        }
+            }
     });//ajax
 
 }
