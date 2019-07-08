@@ -28,6 +28,9 @@ function getDeckId(btn, event) {
     });//ajax
 }
 
+//We need this because the shuffle call often returns faster
+//than the animation of the dialog. This makes sure it stays for at least
+//half a second.
 var closeShuffleMessage = false;
 function closeShuffleMessageCallback() {
     if(closeShuffleMessage) {

@@ -14,23 +14,37 @@ footer {
     height: 30rem;
 }
 
+details {
+    color: darkred;
+}
+
+
 #container {
     position: relative;
     min-height: 100vh;
 }
 
-h3 {
+h1 {
     color: black !important;
     font-size: 0.5em;
 }
 
+h2 {
+    color: darkgray !important;
+    font-size: 0.4em;
+}
+
+h3 {
+    color: black !important;
+    font-size: 0.3em;
+}
 #pullError {
     padding: 0;
     margin-top: 15px;
 }
 
 body {
-    background-color: #477148 !important;
+    background-color: #628a62 !important;
 }
 
 #dealBtn {
@@ -55,16 +69,16 @@ body {
 .cards {
     position: relative;
     width: 50%;
-  }
+ }
   
   /* Make the image to responsive */
-  .cardImage {
+ .cardImage {
     width: 100%;
     height: auto;
-  }
+ }
   
   /* The overlay effect (full height and width) - lays on top of the container and over the image */
-  .cardOverlay {
+ .cardOverlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -75,15 +89,16 @@ body {
     height: 100%;
     transform: scale(0);
     transition: .3s ease;
+    border-radius: 15px;
   }
   
   /* When you mouse over the container, the overlay text will "zoom" in display */
-  .cardContainer:hover .cardOverlay {
+ .cardContainer:hover .cardOverlay {
     transform: scale(1);
   }
   
   /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
-  .cardName {
+ .cardName {
     color: black;
     font-size: 20px;
     position: absolute;
@@ -93,6 +108,18 @@ body {
     text-align: center;
   }
 
-a {
+a:link{
     color: black !important;
+    text-decoration: underline;
+}
+
+a:visited{
+    color: darkgray !important;
+    
+}
+
+
+#remainingCount {
+    background-color:lightcoral;
+    font-style: italic;
 }

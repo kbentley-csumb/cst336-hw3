@@ -16,7 +16,8 @@
     <div id="container">
     <main>
     <h1>Deck of Cards Demo</h1>
-    <h2>Powered by <a href="https://deckofcardsapi.com">https://deckofcardsapi.com</a></h2>
+    <h2>Powered by <br/>
+    <a href="https://deckofcardsapi.com">https://deckofcardsapi.com</a></h2>
 <p></p><br/>
     <form id="signupForm" method="post" action="#">
 
@@ -41,7 +42,7 @@
             </div>
             <div class='col-sm-8'>
                 <div class="form-group">
-                    <label for="nPull">How many cards do you want to draw? <span id="remainingCount">0 cards are available.</span></label>
+                    <label class="labelText" for="nPull">How many cards do you want to draw? <span id="remainingCount">0 cards are available.</span></label>
                     <input class="form-control" type="text" name="nPull" id="nPull" value="1" placeholder="1">
                     <small id="pullError"></small>
                 </div>
