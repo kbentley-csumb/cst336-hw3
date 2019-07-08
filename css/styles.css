@@ -9,13 +9,13 @@ main {
 footer {
     text-align: center;
     font-size: 0.8em;
-    color: black;
+    color: white;
     bottom: 0;
     height: 30rem;
 }
 
 details {
-    color: darkred;
+    color: fc5226;
 }
 
 
@@ -25,7 +25,7 @@ details {
 }
 
 h1 {
-    color: black !important;
+    color: white !important;
     font-size: 0.5em;
 }
 
@@ -35,7 +35,7 @@ h2 {
 }
 
 h3 {
-    color: black !important;
+    color: lightcyan !important;
     font-size: 0.3em;
 }
 #pullError {
@@ -44,25 +44,26 @@ h3 {
 }
 
 body {
-    background-color: #628a62 !important;
+    background-color: #1561ad !important;
 }
 
 #dealBtn {
-    background-color: #FCE258;
-    border-color: #FCE258;
-    color: black;
+    background-color: #1dbab4;
+    border-color: #1dbab4;
+
+    color: white;
 }
 
 #shuffleBtn {
-    background-color: #FCE258;
-    border-color: #FCE258;
-    color: black;
+    background-color: #1dbab4;
+    border-color: #1dbab4;
+    color: white;
 }
 
 #drawBtn {
-    background-color: #00FF4C;
-    border-color: #00FF4C;
-    color: black;
+    background-color: #fc5226;
+    border-color: #fc5226;
+    color: white;
 }
 
 /* Container needed to position the overlay. Adjust the width as needed */
@@ -83,7 +84,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #FCE258;
+    background-color: #1c77ac;
     overflow: hidden;
     width: 100%;
     height: 100%;
@@ -109,17 +110,24 @@ body {
   }
 
 a:link{
-    color: black !important;
+    color: white !important;
     text-decoration: underline;
 }
 
 a:visited{
-    color: darkgray !important;
+    color: lightcyan !important;
     
 }
 
 
 #remainingCount {
-    background-color:lightcoral;
+    background-color:fc5226;
     font-style: italic;
+}
+
+.labelText {
+    background-color:#fc5226;
+    border-radius: 5px;
+    color: black !important;
+    
 }

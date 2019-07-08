@@ -42,13 +42,24 @@
             </div>
             <div class='col-sm-8'>
                 <div class="form-group">
-                    <label class="labelText" for="nPull">How many cards do you want to draw? <span id="remainingCount">0 cards are available.</span></label>
-                    <input class="form-control" type="text" name="nPull" id="nPull" value="1" placeholder="1">
-                    <small id="pullError"></small>
+                    <label class="labelText" for="nPull">How many cards do you want to draw? 
+                        <br/><span id="remainingCount">0 cards are available.</span></label>
                 </div>
             </div>
             <div class='col-sm-2'>
-            </div>
+            </div>            
+        </div>
+        <div class="row">
+                <div class='col-sm-5'>
+                </div>    
+                <div class='col-sm-2'>
+                <input class="form-control" type="text" name="nPull" id="nPull" value="1" placeholder="1">
+                <small id="pullError"></small>
+                <br>
+                </div>
+                <div class='col-sm-5'>
+                </div>
+
         </div>
         <div class="row">
         <div class='col-sm-12'>
